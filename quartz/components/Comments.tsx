@@ -1,62 +1,39 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { classNames } from "../util/lang"
-// @ts-ignore
-import script from "./scripts/comments.inline"
 
-type Options = {
-  provider: "giscus"
-  options: {
-    repo: `${string}/${string}`
-    repoId: string
-    category: string
-    categoryId: string
-    themeUrl?: string
-    lightTheme?: string
-    darkTheme?: string
-    mapping?: "url" | "title" | "og:title" | "specific" | "number" | "pathname"
-    strict?: boolean
-    reactionsEnabled?: boolean
-    inputPosition?: "top" | "bottom"
-    lang?: string
-  }
-}
-
-function boolToStringBool(b: boolean): string {
-  return b ? "1" : "0"
-}
-
-export default ((opts: Options) => {
-  const Comments: QuartzComponent = ({ displayClass, fileData, cfg }: QuartzComponentProps) => {
-    // check if comments should be displayed according to frontmatter
-    const disableComment: boolean =
-      typeof fileData.frontmatter?.comments !== "undefined" &&
-      (!fileData.frontmatter?.comments || fileData.frontmatter?.comments === "false")
-    if (disableComment) {
-      return <></>
+export default (() => {
+  const Comments: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
+    const slug = fileData.slug
+    // Do not render comments on index, folder index, or tag pages
+    if (!slug || slug === "index" || slug.endsWith("/index") || slug.startsWith("tags/")) {
+      return null
     }
 
     return (
-      <div
-        class={classNames(displayClass, "giscus")}
-        data-repo={opts.options.repo}
-        data-repo-id={opts.options.repoId}
-        data-category={opts.options.category}
-        data-category-id={opts.options.categoryId}
-        data-mapping={opts.options.mapping ?? "url"}
-        data-strict={boolToStringBool(opts.options.strict ?? true)}
-        data-reactions-enabled={boolToStringBool(opts.options.reactionsEnabled ?? true)}
-        data-input-position={opts.options.inputPosition ?? "bottom"}
-        data-light-theme={opts.options.lightTheme ?? "light"}
-        data-dark-theme={opts.options.darkTheme ?? "dark"}
-        data-theme-url={
-          opts.options.themeUrl ?? `https://${cfg.baseUrl ?? "example.com"}/static/giscus`
-        }
-        data-lang={opts.options.lang ?? "en"}
-      ></div>
+      <div class="comments-container" style="margin-top: 3rem; border-top: 1px solid var(--lightgray); padding-top: 2rem;">
+        <iframe
+          id="comments-iframe"
+          src={`https://board.ykcha.com/comments?postSlug=${slug}`}
+          width="100%"
+          height="650px"
+          style="border: none;"
+          scrolling="no"
+          loading="lazy"
+        ></iframe>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.addEventListener('message', (event) => {
+            if (event.origin === 'https://board.ykcha.com' && event.data?.type === 'comment_added') {
+              const iframe = document.getElementById('comments-iframe');
+              if (iframe) {
+                const url = new URL(iframe.src);
+                url.searchParams.set('_r', Date.now().toString());
+                iframe.src = url.toString();
+              }
+            }
+          });
+        `}} />
+      </div>
     )
   }
 
-  Comments.afterDOMLoaded = script
-
   return Comments
-}) satisfies QuartzComponentConstructor<Options>
+}) satisfies QuartzComponentConstructor
