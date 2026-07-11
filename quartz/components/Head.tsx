@@ -89,6 +89,24 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://ykcha.com/#person",
+              "name": "YoonKyung Cha",
+              "alternateName": "Victor Cha",
+              "url": "https://blog.ykcha.com",
+              "sameAs": [
+                "https://ykcha.com",
+                "https://github.com/Victor2you",
+                "https://www.linkedin.com/in/yoonkyungcha"
+              ]
+            })
+          }}
+        />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
