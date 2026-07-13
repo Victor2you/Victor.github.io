@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
-
+site_id: zingy-bubblegum-cf853f.netlify.app
 media_folder: "content/images"
 public_folder: "/images"
 
