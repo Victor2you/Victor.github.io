@@ -3,7 +3,7 @@ backend:
   repo: Victor2you/victor2you.github.io
   branch: main
   auth_type: pkce
-  app_id: 여기에_Client_ID_붙여넣기
+  app_id: Ov23ctbiZDhAnaiQ1ZGu
 
 media_folder: "content/images"
 public_folder: "/images"
