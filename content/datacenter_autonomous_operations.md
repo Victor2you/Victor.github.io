@@ -14,7 +14,7 @@ publish: true
 
 하지만 현장에서 만나는 경영진들의 고민은 깊어지고 있습니다. 
 
-> **"[[02_Wiki/23_Concepts_&_Entities/General_Business/PUE (Power Usage Effectiveness)|PUE]](에너지 효율 지표)를 낮추면서도, 100%에 수렴하는 가동 시간([[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Guaranteed Uptime|Guaranteed Uptime]])을 어떻게 동시에 달성할 것인가?"**
+> **"PUE(에너지 효율 지표)를 낮추면서도, 100%에 수렴하는 가동 시간(Guaranteed Uptime)을 어떻게 동시에 달성할 것인가?"**
 
 이 난제를 풀기 위한 임원 관점의 3가지 핵심 인사이트를 공유하고자 합니다.
 
@@ -32,9 +32,9 @@ publish: true
 ### 2. 고장 이전(PdM)의 가치: 합성 데이터(Synthetic Data)가 이끄는 예지 정비
 대부분의 미션 크리티컬 인프라는 장비 연한을 기준으로 부품을 선제 교체하는 '정기적 유지보수'에 의존하고 있습니다. 이는 막대한 비용 낭비이거나, 예기치 못한 불시 정지의 위험을 항상 내포하고 있습니다. 
 
-반면, 인공지능 기반 예지 정비(Predictive Maintenance, [[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Predictive Maintenance (PdM)|PdM]]) 모델은 데이터센터 특성상 '고장 사례 데이터'를 충분히 수집하기 어렵다는 모순(고장이 발생하면 안 되는 환경)에 부딪힙니다.
+반면, 인공지능 기반 예지 정비(Predictive Maintenance, PdM) 모델은 데이터센터 특성상 '고장 사례 데이터'를 충분히 수집하기 어렵다는 모순(고장이 발생하면 안 되는 환경)에 부딪힙니다.
 
-* **비즈니스 해법:** 물리 시뮬레이션을 통해 인위적으로 설계된 고성능 **[[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Synthetic Data|합성 데이터]]([[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Synthetic Data|Synthetic Data]])**를 기하학적으로 생성하여 AI 모델을 사전 학습시켜야 합니다. 이 사전 학습 모델을 하니웰 FORGE AI 에이전트에 이식함으로써, 고장 징후가 극히 미미한 초기 단계에서도 Zero-shot 혹은 Few-shot 기법으로 이상 징후를 99% 이상 탐지해 내는 것입니다. 
+* **비즈니스 해법:** 물리 시뮬레이션을 통해 인위적으로 설계된 고성능 **합성 데이터(Synthetic Data)**를 기하학적으로 생성하여 AI 모델을 사전 학습시켜야 합니다. 이 사전 학습 모델을 하니웰 FORGE AI 에이전트에 이식함으로써, 고장 징후가 극히 미미한 초기 단계에서도 Zero-shot 혹은 Few-shot 기법으로 이상 징후를 99% 이상 탐지해 내는 것입니다. 
 
 비용과 리스크를 획기적으로 낮추는 AI 기반 자산 성능 관리(APM) 모델의 표준입니다.
 
@@ -43,9 +43,9 @@ publish: true
 ### 3. 기술 최적화에서 '에너지 ROI'와 '리스크 인수'로의 전환
 우리가 PUE를 1.15에서 1.05로 줄이기 위해 막대한 설비 투자를 감행할 때, 경영진은 단순 효율 지표의 상승이 아닌 **비즈니스적 ROI와 가동성(Resiliency)**을 질문해야 합니다.
 
-* **SLA의 진화:** 하드웨어와 소프트웨어를 동시에 제공하는 기술 얼라이언스는 고객에게 단순히 기술을 파는 것이 아니라 **"리스크를 인수(Assume your RISK)"**하고 **"Guaranteed UPTIME([[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Guaranteed Uptime|무중단 가동 보장]])"**을 계약서에 명시하는 비즈니스 모델(SLA)로 진화해야 합니다. 
+* **SLA의 진화:** 하드웨어와 소프트웨어를 동시에 제공하는 기술 얼라이언스는 고객에게 단순히 기술을 파는 것이 아니라 **"리스크를 인수(Assume your RISK)"**하고 **"Guaranteed UPTIME(무중단 가동 보장)"**을 계약서에 명시하는 비즈니스 모델(SLA)로 진화해야 합니다. 
 
-기술은 백그라운드에서 조용히 자율 작동(Autonomous Operation)하고, 인간은 최종적인 비즈니스 의사결정과 거버넌스 신뢰에 집중하는 [[02_Wiki/23_Concepts_&_Entities/Business_Initiatives/Human-in-the-Loop (HITL)|인간-기술 협업]](Human-in-the-Loop, HITL) 철학이 정립될 때 비로소 디지털 자산 가치가 극대화될 수 있습니다.
+기술은 백그라운드에서 조용히 자율 작동(Autonomous Operation)하고, 인간은 최종적인 비즈니스 의사결정과 거버넌스 신뢰에 집중하는 인간-기술 협업(Human-in-the-Loop, HITL) 철학이 정립될 때 비로소 디지털 자산 가치가 극대화될 수 있습니다.
 
 ---
 
