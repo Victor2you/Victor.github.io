@@ -23,6 +23,4 @@ publish: true
 
 - [[2026-07-14_blog_AI와_감정의_설계|가짜가 현실을 바꾼다]]
 - [[ai-amplifier-not-equalizer|AI는 모두에게 공평하지 않다]]
-- [[blog_presence_long|기계가 일하고 인간이 신뢰를 짓는다 — Executive Presence 성찰록]]
 - [[blog_adaptive_leadership|AI J-커브를 넘는 적응형 리더십]]
-- [[datacenter_autonomous_operations|데이터센터의 미래 — 자율 운영과 에너지 ROI의 본질]]
