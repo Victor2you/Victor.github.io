@@ -1,5 +1,9 @@
 ---
+title: 기계가 일하고 인간이 신뢰를 짓는다 — Executive Presence 성찰록
 publish: true
+tags:
+  - HITL
+  - Autonomous
 ---
 # 📝 기계가 일하고 인간이 신뢰를 짓는다: 25년 차 임원의 Executive Presence 성찰록
 

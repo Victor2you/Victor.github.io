@@ -1,5 +1,8 @@
 ---
+title: AI는 모두에게 공평하지 않다
 publish: true
+tags:
+  - AITransformation
 ---
 # AI는 모두에게 공평하지 않다
 

@@ -1,19 +1,19 @@
 ---
-title: Victor's Digital Garden
+title: 차윤경의 디지털 가든
 description: 자동화기업 임원이자 연구자의 DX/AX 인사이트
 publish: true
 ---
 
 <div class="hero-section">
   <div class="hero-eyebrow">Pracademic Insights</div>
-  <h1 class="hero-title">기계가 일하고,<br/>인간이 신뢰를 만든다.</h1>
-  <p class="hero-sub">25년이상 현장에서 증류한 통찰을, 학문의 엄밀함으로 다시 벼린다.<br/>글로벌 자동화기업 임원 × 연구자의 DX/AX 비망록.</p>
+  <h1 class="hero-title">AI, Mission Critical Facilities,<br/>Autonomous, 그리고 비즈니스</h1>
+  <p class="hero-sub">현장의 경험을 바탕으로 연구합니다.</p>
   <div class="hero-tags">
     <span>#MissionCritical</span>
-    <span>#AutonomousOps</span>
+    <span>#Autonomous</span>
     <span>#HITL</span>
-    <span>#ExecutivePresence</span>
-    <span>#DX/AX</span>
+    <span>#AITransformation</span>
+    <span>#Sustainability</span>
   </div>
 </div>
 

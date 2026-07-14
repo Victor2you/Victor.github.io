@@ -4,26 +4,23 @@ const AuthorCard = (_props: QuartzComponentProps) => {
   return (
     <div class="author-card">
       <div class="author-avatar">
-        <img
-          src="https://avatars.githubusercontent.com/u/190089270?v=4"
-          alt="Victor Cha"
-        />
+        <img src="/static/profile.jpg" alt="차윤경 YoonKyung Cha" />
       </div>
       <div class="author-info">
-        <h4>차윤경 Victor Cha</h4>
+        <h4>차윤경 YoonKyung Cha</h4>
         <p>
-          Honeywell Key Initiatives Lead
+          Honeywell Key Initiatives Lead / 이사
           <br />
-          연구자
+          AX·Autonomous 연구자
         </p>
       </div>
       <div class="author-links">
-        <a href="https://board.ykcha.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://ykcha.com" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 20h9"/>
-            <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
           </svg>
-          게시판
+          Profile
         </a>
         <a href="https://www.linkedin.com/in/yoonkyungcha" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">

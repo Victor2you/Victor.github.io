@@ -11,15 +11,15 @@
   --max-prose: 680px;
   --victor-gold: #c9a84c;
   --victor-gold-subtle: rgba(201, 168, 76, 0.12);
-  --victor-blue: #2d5be3;
-  --victor-blue-glow: rgba(45, 91, 227, 0.15);
+  --victor-blue: #002f6c;
+  --victor-blue-glow: rgba(0, 47, 108, 0.15);
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
   --transition: all 0.22s var(--ease-smooth);
 }
 
 [saved-theme="dark"] {
-  --victor-blue: #5b8dee;
-  --victor-blue-glow: rgba(91, 141, 238, 0.18);
+  --victor-blue: #5f8ac9;
+  --victor-blue-glow: rgba(95, 138, 201, 0.18);
 }
 
 /* 3. GLOBAL TYPOGRAPHY

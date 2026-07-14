@@ -1,5 +1,9 @@
 ---
+title: AI J-커브를 넘는 적응형 리더십
 publish: true
+tags:
+  - AITransformation
+  - HITL
 ---
 # AI J-커브를 넘는 적응형 리더십
 
