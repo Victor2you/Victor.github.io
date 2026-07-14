@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Victor's Digital Garden",
+    pageTitle: "차윤경 YoonKyung Cha",
     pageTitleSuffix: " | Pracademic Insights",
     enableSPA: true,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "ko-KR",
-    baseUrl: "victor2you.github.io",
+    baseUrl: "blog.ykcha.com",
     ignorePatterns: ["private", "templates", ".obsidian", "linkedin_*"],
     defaultDateType: "modified",
     theme: {

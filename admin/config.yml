@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: Victor2you/victor2you.github.io
+  branch: main
+  auth_type: pkce
+  app_id: Ov23ctbiZDhAnaiQ1ZGu
+
+media_folder: "content/images"
+public_folder: "/images"
+
+locale: ko
+
+collections:
+  - name: posts
+    label: 글 목록
+    folder: content
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: 제목, name: title, widget: string, required: false }
+      - { label: 생성일, name: created, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false, required: false }
+      - { label: 유형, name: type, widget: select, options: [blog, note, draft], required: false }
+      - { label: 상태, name: status, widget: select, options: [draft, published], default: draft, required: false }
+      - { label: 태그, name: tags, widget: list, required: false }
+      - { label: 본문, name: body, widget: markdown }
