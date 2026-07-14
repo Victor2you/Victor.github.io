@@ -1,6 +1,7 @@
 ---
 title: Victor's Digital Garden
 description: 자동화기업 임원이자 연구자의 DX/AX 인사이트
+publish: true
 ---
 
 <div class="hero-section">

@@ -2,6 +2,7 @@
 aliases: ["데이터센터 자율 운영", "BMS-EPMS 융합 아키텍처", "합성 데이터 기반 예지정비", "에너지 ROI와 리스크 인수"]
 tags: [output, articles, datacenter, DX, "Smart-Building", Autonomous]
 created: 2026-05-23 23:09
+publish: true
 ---
 # [LinkedIn Column] 데이터센터의 미래: 기계와 전력을 아우르는 자율 운영(Autonomous Operations)과 에너지 ROI의 본질
 
