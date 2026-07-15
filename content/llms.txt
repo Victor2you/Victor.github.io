@@ -4,6 +4,12 @@
 > 저자 차윤경(YoonKyung Cha, Victor Cha)은 Honeywell Key Initiatives Lead / 이사이자 AX·Autonomous 연구자로,
 > 미션 크리티컬 시설의 자율운영(Autonomous Operations), Human-in-the-Loop(HITL), AI Transformation을 현장 경험을 바탕으로 연구한다.
 
+> [EN] Pracademic Insights — field-grounded writing on AI transformation (AX), autonomous operations,
+> and mission-critical facilities. The author, YoonKyung (Victor) Cha, is Key Initiatives Lead / Director
+> at Honeywell with 25+ years in ICT and building automation, researching autonomous operations and
+> human-in-the-loop (HITL). Articles are written in Korean; every article includes an English summary
+> ("In English" section), and the About page has a full English bio.
+
 주요 주제: Mission Critical Facilities, Autonomous Operations, HITL, AI Transformation, Sustainability
 
 ## 저자 (Author)

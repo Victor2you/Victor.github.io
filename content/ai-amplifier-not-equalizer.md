@@ -62,27 +62,7 @@ AI는 질문의 수준만큼 결과를 돌려준다.
 
 이건 기술 문제가 아니라 설계 문제다. 그 설계를 지금 누가 하고 있는가.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "AI는 모두에게 공평하지 않다",
-  "description": "같은 AI 도구를 써도 결과가 다른 이유 — 개인 역량 격차와 조직 병목의 관점에서 본 AI 생산성 패러독스",
-  "author": {
-    "@type": "Person",
-    "name": "윤경 차",
-    "url": "https://ykcha.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "ykcha.com",
-    "url": "https://ykcha.com"
-  },
-  "datePublished": "2026-07-12",
-  "keywords": ["AI 생산성", "AI 증폭기", "AI 패러독스", "조직 병목", "생산성 격차"],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://blog.ykcha.com/ai-amplifier-not-equalizer"
-  }
-}
-</script>
+---
+
+> [!summary] In English — AI Is an Amplifier, Not an Equalizer
+> Two teammates used the same company-provided AI and produced completely different outcomes. Research (Samsung SDS, 2026) shows productivity gaps between AI users are widening, not closing. Three patterns explain why: people who define problems themselves get 10x leverage; people who critically review outputs turn AI into a judgment aid; people who accept answers as-is reduce AI to a copy-paste machine. AI amplifies existing capability — problem definition and critical review — it does not equalize it. And even when individuals get faster, organizational bottlenecks absorb the saved time: an AI that drafts 10x faster changes nothing if the pipeline's next stage still runs at the old speed. Deciding which stages AI should compress and which require human verification is a design problem, not a technology problem.

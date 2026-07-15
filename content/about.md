@@ -35,3 +35,15 @@ published: 2026-05-28
 - LinkedIn: [linkedin.com/in/yoonkyungcha](https://www.linkedin.com/in/yoonkyungcha)
 - GitHub: [github.com/Victor2you](https://github.com/Victor2you)
 - Brunch: [brunch.co.kr/@ykcha](https://brunch.co.kr/@ykcha)
+
+---
+
+## In English
+
+**YoonKyung (Victor) Cha** is Key Initiatives Lead / Director at Honeywell and a researcher in AX (AI Transformation) and autonomous operations. He has spent 25+ years in ICT and building automation, and now leads strategies that transform mission-critical infrastructure and building management systems into AI-driven autonomous operations — spanning hyperscale data centers, industrial facilities, cloud/AI-based IBMS, and energy & sustainability (ESG/energy-ROI models).
+
+He holds an MBA from Sogang University (2026, top honors, 97/100); his thesis examined the digital transformation of the building automation industry through cloud platforms, AI-driven operations optimization, and servitization. He has published six papers and articles on smart-building energy optimization, delivered keynotes including Data Center Summit Korea 2026 and HVAC KOREA 2026, and holds CDCS, CDCP, Certified Enterprise Disaster Manager, and ISO 50001 auditor certifications.
+
+This blog, *Pracademic Insights*, is where field experience meets research — on AI transformation, autonomous operations, human-in-the-loop (HITL), and what remains human when machines run the mission-critical world. Every article carries an English summary; the full profile lives at [ykcha.com](https://ykcha.com).
+
+> In the age of AX and Autonomy, the center is still human — everything is created by the mind (一切唯心造).
