@@ -2,6 +2,7 @@
 title: 차윤경의 디지털 가든
 description: 자동화기업 임원이자 연구자의 DX/AX 인사이트
 publish: true
+published: 2026-05-29
 ---
 
 <div class="hero-section">
