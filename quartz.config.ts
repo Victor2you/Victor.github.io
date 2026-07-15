@@ -20,10 +20,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian", "linkedin_*"],
     defaultDateType: "published",
     theme: {
-      fontOrigin: "googleFonts",
+      // "local": Google Fonts CSS를 로드하지 않음 — 화면 폰트는 Head.tsx의 Pretendard(jsdelivr) 단일 체계.
+      // typography 이름은 OG 이미지 생성(satori)의 폰트 fetch에 사용되므로 한글 지원 폰트로 지정.
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Pretendard",
+        header: "Noto Sans KR",
         body: "Noto Sans KR",
         code: "JetBrains Mono",
       },

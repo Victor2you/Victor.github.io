@@ -6,6 +6,7 @@ published: 2026-05-29
 tags:
   - AITransformation
   - HITL
+  - Leadership
 ---
 
 ## GM의 실패, 도요타의 재설계

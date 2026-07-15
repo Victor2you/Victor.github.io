@@ -8,6 +8,7 @@
 
 ## 저자 (Author)
 
+- [About](https://blog.ykcha.com/about): 블로그 내 저자 소개 페이지
 - [공식 프로필 허브](https://ykcha.com): 경력, 강연, 발표, 저술 전체 목록
 - [LinkedIn](https://www.linkedin.com/in/yoonkyungcha): 경력 프로필
 - [GitHub](https://github.com/Victor2you): 오픈 프로젝트

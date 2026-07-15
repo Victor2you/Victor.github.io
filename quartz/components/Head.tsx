@@ -38,9 +38,11 @@ export default (() => {
 
     // Article detection: real content pages (not home, 404, tag/folder listings)
     const slug = fileData.slug ?? ""
+    const isAboutPage = slug === "about"
     const isArticle =
       slug !== "index" &&
       slug !== "404" &&
+      !isAboutPage &&
       !slug.startsWith("tags/") &&
       !slug.endsWith("/index") &&
       fileData.frontmatter?.title !== undefined
@@ -83,7 +85,16 @@ export default (() => {
           },
           image: ogImageDefaultPath,
         }
-      : { "@context": "https://schema.org", ...personLd }
+      : isAboutPage
+        ? {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            url: socialUrl,
+            inLanguage: cfg.locale,
+            dateModified: modifiedDate?.toISOString(),
+            mainEntity: personLd,
+          }
+        : { "@context": "https://schema.org", ...personLd }
 
     return (
       <head>
@@ -151,6 +162,8 @@ export default (() => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <meta name="description" content={description} />
+        <meta name="naver-site-verification" content="46505119759d076d7d777bdf225c07cfb082ed5b" />
+        <meta name="naver-site-verification" content="e6f46160ed81d2f164cc97d67d609aab34940307" />
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
