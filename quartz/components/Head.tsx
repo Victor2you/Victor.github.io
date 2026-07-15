@@ -36,6 +36,55 @@ export default (() => {
     )
     const ogImageDefaultPath = `https://${cfg.baseUrl}/static/og-image.png`
 
+    // Article detection: real content pages (not home, 404, tag/folder listings)
+    const slug = fileData.slug ?? ""
+    const isArticle =
+      slug !== "index" &&
+      slug !== "404" &&
+      !slug.startsWith("tags/") &&
+      !slug.endsWith("/index") &&
+      fileData.frontmatter?.title !== undefined
+    const publishedDate = fileData.dates?.published
+    const modifiedDate = fileData.dates?.modified
+
+    const personLd = {
+      "@type": "Person",
+      "@id": "https://ykcha.com/#person",
+      name: "YoonKyung Cha",
+      alternateName: ["차윤경", "Victor Cha"],
+      jobTitle: "Key Initiatives Lead / Director",
+      worksFor: { "@type": "Organization", name: "Honeywell" },
+      url: "https://blog.ykcha.com",
+      sameAs: [
+        "https://ykcha.com",
+        "https://github.com/Victor2you",
+        "https://www.linkedin.com/in/yoonkyungcha",
+        "https://brunch.co.kr/@ykcha",
+      ],
+    }
+
+    const jsonLd = isArticle
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: fileData.frontmatter?.title,
+          description: description,
+          url: socialUrl,
+          inLanguage: cfg.locale,
+          mainEntityOfPage: { "@type": "WebPage", "@id": socialUrl },
+          datePublished: publishedDate?.toISOString(),
+          dateModified: modifiedDate?.toISOString(),
+          author: personLd,
+          publisher: {
+            "@type": "Organization",
+            name: "차윤경의 디지털 가든",
+            url: `https://${cfg.baseUrl}`,
+            logo: { "@type": "ImageObject", url: ogImageDefaultPath },
+          },
+          image: ogImageDefaultPath,
+        }
+      : { "@context": "https://schema.org", ...personLd }
+
     return (
       <head>
         <title>{title}</title>
@@ -61,7 +110,14 @@ export default (() => {
 
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
         <meta property="og:title" content={title} />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content={isArticle ? "article" : "website"} />
+        {isArticle && publishedDate && (
+          <meta property="article:published_time" content={publishedDate.toISOString()} />
+        )}
+        {isArticle && modifiedDate && (
+          <meta property="article:modified_time" content={modifiedDate.toISOString()} />
+        )}
+        {isArticle && <meta property="article:author" content="차윤경 YoonKyung Cha" />}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
@@ -88,24 +144,11 @@ export default (() => {
           </>
         )}
 
+        <link rel="canonical" href={socialUrl.replace(/\/index$/, "/")} />
         <link rel="icon" href={iconPath} />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://ykcha.com/#person",
-              "name": "YoonKyung Cha",
-              "alternateName": "Victor Cha",
-              "url": "https://blog.ykcha.com",
-              "sameAs": [
-                "https://ykcha.com",
-                "https://github.com/Victor2you",
-                "https://www.linkedin.com/in/yoonkyungcha"
-              ]
-            })
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />

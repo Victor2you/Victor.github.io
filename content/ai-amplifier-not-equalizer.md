@@ -1,10 +1,11 @@
 ---
 title: AI는 모두에게 공평하지 않다
+description: 같은 팀, 같은 AI를 쓰는데 왜 결과가 갈리는가. AI는 평등 장치가 아니라 증폭기다 — 문제 정의력과 비판적 검토 역량이 있는 사람에게만 10배 레버리지가 된다.
 publish: true
+published: 2026-07-12
 tags:
   - AITransformation
 ---
-# AI는 모두에게 공평하지 않다
 
 지난 봄, 팀 미팅에서 있었던 일이다.
 
