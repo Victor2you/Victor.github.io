@@ -162,14 +162,8 @@ export default (() => {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <meta name="description" content={description} />
-        <meta
-          name="naver-site-verification"
-          content="46505119759d076d7d777bdf225c07cfb082ed5b"
-        />
-        <meta
-          name="naver-site-verification"
-          content="e6f46160ed81d2f164cc97d67d609aab34940307"
-        />
+        <meta name="naver-site-verification" content="46505119759d076d7d777bdf225c07cfb082ed5b" />
+        <meta name="naver-site-verification" content="e6f46160ed81d2f164cc97d67d609aab34940307" />
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
