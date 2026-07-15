@@ -38,9 +38,11 @@ export default (() => {
 
     // Article detection: real content pages (not home, 404, tag/folder listings)
     const slug = fileData.slug ?? ""
+    const isAboutPage = slug === "about"
     const isArticle =
       slug !== "index" &&
       slug !== "404" &&
+      !isAboutPage &&
       !slug.startsWith("tags/") &&
       !slug.endsWith("/index") &&
       fileData.frontmatter?.title !== undefined
@@ -83,7 +85,16 @@ export default (() => {
           },
           image: ogImageDefaultPath,
         }
-      : { "@context": "https://schema.org", ...personLd }
+      : isAboutPage
+        ? {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            url: socialUrl,
+            inLanguage: cfg.locale,
+            dateModified: modifiedDate?.toISOString(),
+            mainEntity: personLd,
+          }
+        : { "@context": "https://schema.org", ...personLd }
 
     return (
       <head>
