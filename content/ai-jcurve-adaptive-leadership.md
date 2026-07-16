@@ -1,6 +1,8 @@
 ---
 title: AI J-커브를 넘는 적응형 리더십
 description: AI 도입은 기술 과제가 아니라 조직 체계를 재배치하는 적응형 과제다. 생산성이 떨어지는 J-커브 하강 구간에서 리더가 무엇을 하는지가 승부처다.
+aliases:
+  - blog_adaptive_leadership
 publish: true
 published: 2026-05-29
 tags:
