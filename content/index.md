@@ -20,12 +20,4 @@ published: 2026-05-29
 
 ---
 
-## 최근 아티클
-
-- [[fake-reshapes-reality|가짜가 현실을 바꾼다]]
-- [[ai-amplifier-not-equalizer|AI는 모두에게 공평하지 않다]]
-- [[ai-jcurve-adaptive-leadership|AI J-커브를 넘는 적응형 리더십]]
-
----
-
 처음 오셨다면 → [[about|저자 소개 (About)]]
