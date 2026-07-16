@@ -1,6 +1,8 @@
 ---
 title: 가짜가 현실을 바꾼다
 description: 1972년 영화 대부 이후 실제 마피아들이 영화를 따라하기 시작했다. 정교하게 설계된 허구가 현실을 재편한다. AI 콘텐츠 시대, 진짜 질문은 출처가 아니라 감정 설계다.
+aliases:
+  - 2026-07-14_blog_AI와_감정의_설계
 publish: true
 published: 2026-07-14
 tags:
@@ -45,3 +47,8 @@ tags:
 AI가 콘텐츠를 무한히 생성하는 세계에서, 어떤 배열이 감정을 건드리는지 아는 것이 경쟁력이 된다.
 
  그 설계법이 탐구 과제다.
+
+---
+
+> [!summary] In English — Fiction Reshapes Reality
+> Before *The Godfather* (1972), the American Mafia looked nothing like the film. After it, real mobsters began imitating the movie — its fashion, speech, and codes of discipline. A carefully designed fiction reshaped reality. The pattern repeats across history: novels, comics, and visual effects were each dismissed as "fake" or low culture until they moved people, and then they became the mainstream. In a world where AI can generate unlimited content, the durable advantage is not provenance — human-made versus AI-made — but emotional design: knowing which arrangement of scenes, which timing, which deliberate silence actually touches people. That design discipline is the open research question.

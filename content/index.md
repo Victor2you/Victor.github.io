@@ -22,9 +22,9 @@ published: 2026-05-29
 
 ## 최근 아티클
 
-- [[2026-07-14_blog_AI와_감정의_설계|가짜가 현실을 바꾼다]]
+- [[fake-reshapes-reality|가짜가 현실을 바꾼다]]
 - [[ai-amplifier-not-equalizer|AI는 모두에게 공평하지 않다]]
-- [[blog_adaptive_leadership|AI J-커브를 넘는 적응형 리더십]]
+- [[ai-jcurve-adaptive-leadership|AI J-커브를 넘는 적응형 리더십]]
 
 ---
 

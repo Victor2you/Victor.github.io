@@ -1,6 +1,8 @@
 ---
 title: AI J-커브를 넘는 적응형 리더십
 description: AI 도입은 기술 과제가 아니라 조직 체계를 재배치하는 적응형 과제다. 생산성이 떨어지는 J-커브 하강 구간에서 리더가 무엇을 하는지가 승부처다.
+aliases:
+  - blog_adaptive_leadership
 publish: true
 published: 2026-05-29
 tags:
@@ -37,3 +39,8 @@ AI는 업무의 첫 80%를 빠르게 초안화한다. 비용은 이미 무너졌
 
 **Q. AI 도입 시의 생산성 J-커브란 무엇인가?**
 - 도입 초기 기존 업무 방식이 흔들리며 겪는 일시적 생산성 하락 곡선이다. 시스템 재설계가 끝나면 상승 임계점을 넘어 성장한다.
+
+---
+
+> [!summary] In English — Adaptive Leadership Across the AI J-Curve
+> In the 1970s, GM treated industrial robots as mere machines and stalled; Toyota redesigned its production processes and collaboration structures around the same technology and pulled ahead. AI stands at the same fork: adopting it is not a technical installation but an adaptive challenge that reorganizes how the organization works. AI drafts the first 80% of most work cheaply; differentiation lives in the human 20% — doubting the machine's output, rebuilding it for business context, and owning the final decision. Productivity initially drops as new ways of working collide with old ones (the J-curve), and what leaders do in that dip decides the outcome. The effective leaders I've observed gave fewer orders during the dip: they calmly absorbed the risk themselves (power) and defended their shaken teams (warmth). That was the precondition for the leap.
