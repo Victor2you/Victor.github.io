@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "git fetch origin 2>&1; echo '--- 원격에는 있는데 이 세션엔 없는 커밋 ---'; git log --oneline HEAD..origin/main 2>/dev/null; echo '--- 이 세션에만 있고 원격엔 없는 커밋(미푸시) ---'; git log --oneline origin/main..HEAD 2>/dev/null; echo '--- git status ---'; git status -sb"
+          }
+        ]
+      }
+    ]
+  }
+}
