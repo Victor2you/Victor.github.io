@@ -5,7 +5,7 @@ publish: true
 published: 2026-05-28
 ---
 
-> AX·Autonomy 비즈니스의 시대일수록, 결국 중심은 사람입니다 — 일체유심조(一切唯心造)
+> AX·Autonomy 비즈니스의 시대일수록, 결국 중심은 사람입니다
 
 빌딩 자동제어에서 시작해 25년을 현장에서 보냈습니다. 자율화가 가까워질수록 질문이 하나 남았습니다 — **기계가 다 하게 되면, 사람의 자리는 어디인가.** 그 답을 증명하려고 다시 학생이 됐습니다. 현장에서 경험하고, 연구로 검증합니다.
 
@@ -46,4 +46,4 @@ He holds an MBA from Sogang University (2026, top honors, 97/100); his thesis ex
 
 This blog, *Pracademic Insights*, is where field experience meets research — on AI transformation, autonomous operations, human-in-the-loop (HITL), and what remains human when machines run the mission-critical world. Every article carries an English summary; the full profile lives at [ykcha.com](https://ykcha.com).
 
-> In the age of AX and Autonomy, the center is still human — everything is created by the mind (一切唯心造).
+> In the age of AX and Autonomy, the center is still human.
