@@ -23,7 +23,7 @@ ICT에서 시작해 25년을 스마트 빌딩 산업에서 보냈습니다. 자�
 이 블로그는 **Pracademic Insights** — 실무자(practitioner)이자 연구자(academic)로서 AX·Autonomous·HITL(Human-in-the-Loop)에 대해 현장 기반으로 쓰는 공간입니다.
 
 - 서강대 MBA 우수졸업 (97/100, 2026) — 학위논문 *Digital Transformation Study of Building Automation Industry*: Cloud 플랫폼, AI 운영 최적화, Servitization
-- 스마트빌딩 에너지 최적화·그린빌딩 관련 논문 및 기고 6건 (SAREK, Korea Green Building Council 외)
+- 스마트빌딩 에너지 최적화·그린빌딩 관련 [논문 및 기고 6건](https://ykcha.com) (SAREK, Korea Green Building Council 외 — 3건은 원문 링크 확인 가능)
 - 2026 데이터센터 서밋 코리아 기조 발표, HVAC KOREA 2026 Autonomous Control 발표 등 다수 강연
 - CDCS(2026)·CDCP(2023)·기업재난관리사(2018)·ISO 50001 심사원(2013)
 
