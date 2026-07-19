@@ -24,10 +24,12 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import AuthorCard from "./AuthorCard"
+import TagNav from "./TagNav"
 
 export {
   ArticleTitle,
   AuthorCard,
+  TagNav,
   Content,
   TagContent,
   FolderContent,
