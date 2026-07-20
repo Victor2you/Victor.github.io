@@ -512,17 +512,17 @@ pre { overflow-x: auto; white-space: pre; max-width: 100%; }
 
 @media (max-width: 768px) {
   /* ───────────────────────────────────────────────────────
-     [BUG FIX 2] 모바일 레이아웃 order 순서
+     [BUG FIX 2] 모바일 레이아웃 order 순서 (2026-07-20 갱신)
 
      Quartz 실제 HTML 구조 (#quartz-body 직접 자녀):
-       .sidebar.left  → order: 10 (Author Card만 표시, 매우 아래)
-       .center        → order: 1  (본문 첫 번째)
+       .sidebar.left  → order: -1 (내용물은 "전체 글" 링크 하나뿐, 맨 위)
+       .center        → order: 1  (본문 두 번째)
        .sidebar.right → order: 2  (Backlinks)
        footer         → order: 99 (가장 마지막)
 
-     주의: order default = 0 이므로, 열거되지 않은 요소(footer 등)가
-     자동으로 맨 앞으로 율라가는 것을 방지와 footer를
-     명시적으로 order: 99로 고정시켰다.
+     주의: order default = 0 이므로, 열거되지 않은 요소(page-header 등)가
+     -1과 1 사이에 자동으로 끼어든다 — 의도된 동작(제목/브레드크럼은
+     "전체 글" 바로 다음, 본문 바로 앞).
      ─────────────────────────────────────────────────────── */
   #quartz-body {
     display: flex !important;
@@ -547,9 +547,14 @@ pre { overflow-x: auto; white-space: pre; max-width: 100%; }
     float: none !important;
   }
 
-  /* Author Card (sidebar.left): 3위 — 콘텐츠 다 숫고 저 아래 */
+  /* sidebar.left 컨테이너: -1위(최상단, page-header보다도 먼저) — 2026-07-20 변경.
+     안에 실제로 보이는 건 .tag-nav("전체 글" 링크) 하나뿐이므로(아래 규칙 참조,
+     Author Card 등 나머지는 여전히 숨김) 컨테이너를 끌어올려도 시각적으로는
+     얇은 "전체 글" 바 하나만 페이지 맨 위에 나타남.
+     ※ CSS order는 같은 flex 컨테이너(#quartz-body) 안의 형제 간에만 작동하므로
+     자식(.tag-nav)이 아니라 이 컨테이너 자체를 옮겨야 실제로 상단에 뜬다. */
   .sidebar.left {
-    order: 3 !important;
+    order: -1 !important;
     position: static !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -557,7 +562,7 @@ pre { overflow-x: auto; white-space: pre; max-width: 100%; }
     overflow-x: hidden !important;
     z-index: auto !important;
     float: none !important;
-    padding: 0 !important;
+    padding: 0.5rem 0 !important;
   }
 
   /* Footer: 무조건 맨 마지막 — order:0 기본값에 의해 맨 위로 가는 것 방지 */
@@ -566,16 +571,23 @@ pre { overflow-x: auto; white-space: pre; max-width: 100%; }
     order: 99 !important;
   }
 
-  /* sidebar.left 내부: Author Card는 모바일에서 의도적으로 숨김.
+  /* sidebar.left 내부: Author Card 등은 모바일에서 의도적으로 숨김.
      이름(헤더)·About(탐색기 목록)·Profile/LinkedIn/GitHub(푸터)로 이미
      한 탭 거리에서 접근 가능해서, 좁은 화면에 사진+직함 박스까지
-     반복 노출하지 않는 쪽을 택함 (데스크톱 전용 위젯). */
-  .sidebar.left > *:not(.desktop-only) {
+     반복 노출하지 않는 쪽을 택함 (데스크톱 전용 위젯).
+     단, .tag-nav("전체 글" 링크)는 예외 — 2026-07-20: 모바일에서 전체 글
+     목록(카테고리별·최신순)을 찾을 수 없다는 피드백으로 이것만 노출. */
+  .sidebar.left > *:not(.desktop-only):not(.tag-nav) {
     display: none !important;
   }
 
   .sidebar.left .desktop-only {
     display: none !important;
+  }
+
+  a.tag-nav {
+    display: inline-flex !important;
+    margin: 0 !important;
   }
 
   /* ───────────────────────────────────────────────────────
