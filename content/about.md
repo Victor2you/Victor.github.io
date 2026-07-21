@@ -34,7 +34,9 @@ ICT에서 시작해 25년을 스마트 빌딩 산업에서 보냈습니다. 자�
 - 프로필 허브: [ykcha.com](https://ykcha.com)
 - LinkedIn: [linkedin.com/in/yoonkyungcha](https://www.linkedin.com/in/yoonkyungcha)
 - GitHub: [github.com/Victor2you](https://github.com/Victor2you)
+<!-- 2026-07-21: 브런치 작가 등록 전이라 임시 비활성화 — 작가 승인되면 복구
 - Brunch: [brunch.co.kr/@ykcha](https://brunch.co.kr/@ykcha)
+-->
 
 ---
 
